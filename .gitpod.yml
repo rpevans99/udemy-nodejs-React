@@ -13,11 +13,11 @@ ports:
 # List the start up tasks. You can start them in parallel in multiple terminals. See https://www.gitpod.io/docs/config-start-tasks/
 tasks:
   - init: echo 'init script' # runs during prebuild
-    command: echo 'start script'
-    command: cd blog/client
-  - command: cd blog/posts
-    command: npm init -y
-    command: npm install express cors axios nodeman
-  - command: cd blog/comments
-    command: npm init -y
-    command: npm install express cors axios nodeman
+    command: echo 'start script' &&
+             cd blog/client
+  - command: cd blog/posts &&
+             npm init -y &&
+             npm install express cors axios nodeman
+  - command: cd blog/comments && 
+             npm init -y &&
+             npm install express cors axios nodeman
