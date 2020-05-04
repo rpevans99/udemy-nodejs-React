@@ -1,0 +1,26 @@
+{
+  "name": "udemy-nodejs-React",
+  "version": "1.0.0",
+  "description": "to be completed......",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rpevans99/udemy-nodejs-React.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rpevans99/udemy-nodejs-React/issues"
+  },
+  "homepage": "https://github.com/rpevans99/udemy-nodejs-React#readme",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "nodeman": "^1.1.2"
+  }
+}
