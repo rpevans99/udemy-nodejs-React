@@ -13,5 +13,7 @@ tasks:
              npm init -y &&
              npm install express cors axios nodemon &&
              cd blog/client 
-  - command: cd blog/posts
+  - command: npm init -y &&
+             npm install express cors axios nodemon &&
+             cd blog/posts
   - command: cd blog/comments
