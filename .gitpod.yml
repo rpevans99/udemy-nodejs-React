@@ -11,7 +11,7 @@ tasks:
   - init: echo 'init script' # runs during prebuild
     command: echo 'start script' &&
              npm init -y &&
-             npm install express cors axios nodeman &&
+             npm install express cors axios nodemon &&
              cd blog/client 
   - command: cd blog/posts
   - command: cd blog/comments
