@@ -10,8 +10,7 @@ ports:
 tasks:
   - init: echo 'init script' # runs during prebuild
     command: echo 'start script' &&
-             sudo npm init -y &&
-             sudo npm install -g express cors axios nodemon &&
-             cd blog/client 
+             cd blog/client
+  - command: cd blog/posts 
   - command: cd blog/comments
-  - command: cd blog/posts
+  

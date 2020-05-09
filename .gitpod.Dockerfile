@@ -3,7 +3,16 @@ FROM gitpod/workspace-full
 
 USER gitpod
 
+RUN npm install -g express  \
+    && npm install -g cors  \
+    && npm install -g axios \
+    && npm install -g nodemon 
+
 FROM node:10
+
+# Give back control
+USER root
+
 
 # Install custom tools, runtime, etc. using apt-get
 # For example, the command below would install "bastet" - a command line tetris clone:
