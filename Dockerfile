@@ -5,7 +5,10 @@ USER gitpod
 
 ENV NPM_CONFIG_PREFIX=/home/node/.npm-global
 
-RUN npm install -g  --unsafe-perm express  
+RUN npm install -g --unsafe-perm express \
+&& npm install -g cors \
+&& npm install -g axios \
+&& npm install -g nodemon
 
 FROM node:10
 
