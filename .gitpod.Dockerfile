@@ -1,7 +1,7 @@
 # image to use
 FROM gitpod/workspace-full
 
-USER gitpod
+USER root
 
 RUN npm install -g express  \
     && npm install -g cors  \
