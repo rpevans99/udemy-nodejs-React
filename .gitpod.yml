@@ -3,14 +3,18 @@ image:
 
 # List the ports you want to expose and what to do when they are served. See https://www.gitpod.io/docs/config-ports/
 ports:
-  - port: 4000-4002
+  - port: 4000
     onOpen: open-preview
+  - port: 4001
+    onOpen: ignore
+  - port: 4002
+    onOpen: ignore
 
 # List the start up tasks. You can start them in parallel in multiple terminals. See https://www.gitpod.io/docs/config-start-tasks/
 tasks:
-  - init: echo 'init script' # runs during prebuild
-    command: echo 'start script' &&
-             cd blog/client
+  - name: StartUp
+      init: npm install
+  - command: cd blog/client
   - command: cd blog/posts 
   - command: cd blog/comments
   
