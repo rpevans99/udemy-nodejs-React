@@ -14,7 +14,13 @@ ports:
 tasks:
   - name: StartUp
     init: npm install
-  - command: cd blog/client
-  - command: cd blog/posts 
-  - command: cd blog/comments
+    init: npm install cors
+    init: npm install axios
+    init: npm install nodemon
+  - name: client
+    command: cd blog/client
+  - name: posts
+    command: cd blog/posts 
+  - name: comments
+    command: cd blog/comments
   
