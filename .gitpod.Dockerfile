@@ -1,7 +1,9 @@
 # image to use
 FROM gitpod/workspace-full
 
-USER root
+USER gitpod
+
+ENV NPM_CONFIG_PREFIX=/home/node/.npm-global
 
 RUN npm install -g  --unsafe-perm express  \
     && npm install -g cors  \
