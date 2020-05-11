@@ -1,4 +1,4 @@
-# image to use
+# image to use - not really necessary as gitpod/workspace-full is the default for Gitpod
 FROM gitpod/workspace-full
 
 
