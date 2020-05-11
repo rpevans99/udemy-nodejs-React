@@ -12,15 +12,11 @@ ports:
 
 # List the start up tasks. You can start them in parallel in multiple terminals. See https://www.gitpod.io/docs/config-start-tasks/
 tasks:
-  - name: StartUp
-    # command: sudo chown -R $USER ~/.npm
-    # command: sudo chown -R $USER /usr/lib/node_modules
-    # command: sudo chown -R $USER /usr/local/lib/node_modules
-    command: npm install && npm install -g cors && npm install -g axios && npm install -g nodemon
   - name: client
+    init: npm install --prefix blog/client
     command: cd blog/client
   - name: posts
-    command: cd blog/posts 
+    command: cd blog/posts && npm install
   - name: comments
-    command: cd blog/comments
+    command: cd blog/comments && npm install
   
